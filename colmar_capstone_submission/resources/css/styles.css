@@ -1,0 +1,768 @@
+/*
+Colmar Capstone Project
+*/
+
+/**
+ * Table of Contents
+ *
+ * 1.0 - Universal Styles
+ * 2.0 - Body
+ * 3.0 - Header - Desktop
+ * 3.1 - Header - Mobile
+ * 4.0 - CTA - Desktop
+ * 4.1 - CTA - Mobile
+ * 5.0 - On Campus - Desktop
+ * 5.1 - On Campus - Mobile
+ * 6.0 - Courses - Desktop
+ * 6.1 - Courses - Mobile
+ * 7.0 - Thesis - Desktop
+ * 7.1 - Thesis - Mobile
+ * 8.0 - Footer - Desktop
+ * 8.1 - Footer - Mobile
+ */
+
+/**
+ * 1.0 - Universal Styles
+ */
+
+.btn-default {
+  background-color: white;
+  border:0;
+}
+
+.courgette {
+  font-family: "Courgette", cursive;
+}
+
+html {
+  font-size: 16px;
+}
+
+.center {
+  text-align: center;
+}
+
+.image-container {
+  overflow:hidden;
+}
+
+.main-content {
+  width:100%;
+  /* margin:0 auto; */
+}
+
+@media only screen and (max-width:580px) {
+  .main-content{
+    width:100%;
+  }
+}
+
+
+
+/**
+ * 2.0 - Body
+ */
+
+body {
+  font-family: 'Raleway:700', sans-serif;
+  background-color: white;
+}
+
+
+
+/**
+ * 3.0 - Header - Desktop
+ */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4rem;
+  padding-left: 1.5rem;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: .75rem;
+  font-weight: normal;
+  background-color: white;
+}
+
+#desktop {
+  width: 100%;
+  height: auto;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+}
+
+#desktop #logo {
+z-index: 10;
+display: flex;
+align-items: center;
+font-family: 'Courgette', cursive;
+font-size: 1rem;
+}
+
+#desktop  .academy {
+  font-weight:500;
+  color:silver;
+}
+
+#desktop ul {
+  padding-right: 3rem;
+}
+
+#desktop ul li {
+  display: inline;
+  margin-left: 1rem;
+}
+
+#desktop a {
+  font-size: .75rem;
+  font-weight: normal;
+  text-decoration: none;
+  color:black;
+  background-color: white;
+}
+
+#desktop a:hover {
+  background-color: #f6f6f6;
+}
+
+
+/**
+ * 3.1 - Header - Mobile
+ */
+
+#mobile {
+  width:100%;
+  height: auto;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: white;
+}
+
+header #mobile {
+  display: none;
+}
+
+@media only screen and (max-width:580px) {
+  header #desktop {display:none; }
+  header #mobile {display: flex;}
+  body header {
+    padding: 0 0;
+    margin: 0 auto;
+	z-index: 10;
+  }
+}  /*  end: media query  */
+
+
+#first-mobile-image .content {
+  position:  relative;
+  top: 4rem;
+  width:100%;
+  height:11.25rem;
+  overflow: hidden;
+}
+
+#first-mobile-image img {
+  display: block;
+  width:100%;
+  height: auto;
+}
+
+#first-mobile-image {
+  display: none;
+}
+
+@media only screen and (max-width:580px) {
+  #first-mobile-image  {
+    display: block;
+  }
+}  /*  end: media query  */
+
+
+
+
+
+/**
+ * 4.0 - CTA - Desktop
+ */
+
+#cta {
+  position:  relative;
+  top: 4rem;
+  background-color: silver;
+}
+
+#cta .content {
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#cta .image-container {
+  width:60%;
+  height: auto;
+}
+
+#cta img {
+  width:100%;
+  height: auto;
+}
+
+#cta .information {
+  width:30%;
+  height:auto;
+  margin-left: 2.5rem;
+}
+
+#cta h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.3;
+}
+
+#cta h2 {
+  margin: 2rem 0 1.5rem 0;
+  font-size: 1.3rem;
+  line-height: 1.2;
+}
+
+#cta button {
+  width:100%;
+  padding:.5rem 0 .5rem 0;
+  margin-top: 1.5rem;
+  font-size: 1.4rem;
+  color:white;
+  border: 0;
+  background-color: black;
+}
+
+
+
+/**
+ * 4.1 - CTA - Mobile
+ */
+
+@media only screen and (max-width:580px) {
+  #cta {
+    width:100%;
+	margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+  }
+
+  #cta .content {
+    margin: 0 0;
+    padding: 2rem 1rem;
+  }
+
+  #cta .image-container {
+    display: none;
+  }
+
+  #cta .information {
+    width:100%;
+    height:auto;
+    margin-left:0;
+  }
+}  /*  end: media query  */
+
+
+
+
+
+/**
+ * 5.0 - On Campus - Desktop
+ */
+
+#on-campus .mobile-img {
+  display: none;
+}
+
+#on-campus {
+  position:  relative;
+  top: 4rem;
+  height:auto;
+  color:black;
+  overflow: auto;
+}
+
+#on-campus .content {
+  padding: 2rem  1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#on-campus .left {
+  width:60%;
+  height: auto;
+}
+
+#on-campus .left .image-container {
+  width:100%;
+  height: auto;
+}
+
+#on-campus .right {
+  width:100%;
+  height: auto;
+  margin: -1rem 0 0 1.5rem;
+  background: white;
+  border-left: 1px solid silver;
+}
+
+#on-campus .box {
+  min-width:26.4375rem;
+  padding: 1rem 0 1rem 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+#on-campus .right .image-container {
+  height:10.5rem;
+  width:auto;
+}
+
+#on-campus .background-other-color {
+  background-color: silver;
+}
+
+#on-campus .information {
+  margin-left: 1rem;
+  min-width: 60%;
+  height:10.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* general campus  */
+#on-campus img {
+  width:100%;
+  height: 100%;
+}
+
+#on-campus h2 {
+  margin:2rem 0 1.5rem 0;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+#on-campus	.left .latin  {
+  font-style: italic;
+  font-size: .95rem;
+}
+
+#on-campus	.left .author {
+  font-size: 1.1rem;
+}
+
+#on-campus h3 {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+#on-campus .right p {
+  font-size: 1rem;
+}
+
+#on-campus a {
+  margin-top: .5rem;
+}
+
+
+
+/**
+ * 5.1 - On Campus - Mobile
+ */
+
+
+@media only screen and (max-width:580px) {
+  #on-campus .mobile-img {
+    display: block;
+  }
+
+  #on-campus .desktop-img {
+    display: none;
+  }
+
+  #on-campus {
+  }
+
+  #on-campus .background-other-color {
+    background-color: white;
+  }
+
+  #on-campus .content {
+    padding: 1rem 1rem 2rem 1rem;
+  }
+
+  #on-campus .left {
+    display: none;
+  }
+
+  #on-campus .right {
+    width:100%;
+    margin-left:0;
+    border-left:0;
+  }
+
+  #on-campus .box {
+    width: 100%;
+    min-width: 0;
+    padding: 0;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  #on-campus .right .image-container {
+    width:100%;
+    height:auto;
+  }
+
+  #on-campus img {
+	display: block;
+    width:100%;
+    height: auto;
+  }
+
+  #on-campus .information {
+    width:100%;
+    height:auto;
+	margin: 1.2rem 0 0 0;
+  }
+}  /*  end: media query  */
+
+
+
+
+/**
+ * * 6.0 - Courses - Desktop
+ */
+
+#courses {
+  position:  relative;
+  top: 4rem;
+  padding-top: 2rem;
+  width:100%;
+  height:auto;
+  color:black;
+}
+
+#courses .content .list {
+  padding: 2rem  0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: silver;
+}
+
+#courses .container {
+  width:25%;
+  height: 21rem;
+  margin: 0 1rem 1rem 1rem;
+  background-color: white;
+}
+
+#courses .image-container {
+  width:100%;
+  height:auto;
+}
+
+#courses img {
+  width:100%;
+  height:auto;
+  overflow: hidden;
+}
+
+#courses .information {
+  padding: 0 1rem 1rem 1rem;
+}
+
+#courses .box {
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
+#courses h2 {
+  padding-top: 2rem;
+  font-weight: bold;
+  font-size: 2rem;
+  color: black;
+  background-color: silver;
+}
+
+#courses h3 {
+  padding-top: 1rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  overflow: hidden;
+}
+
+#courses h4 {
+  padding: .5rem 0;
+  font-size: 1.2rem;
+}
+
+#courses p {
+  font-size:1rem;
+  line-height: 1.4rem;
+}
+
+
+
+/**
+ * * 6.1 - Courses - Mobile
+ */
+
+@media only screen and (max-width:580px) {
+  #courses .content .list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: white;
+  }
+
+  #courses .container {
+    width:100%;
+    height:auto;
+    margin:0 1rem .5rem 1rem;
+    background-color: white;
+  }
+
+  #courses .box {
+    width:100%;
+  }
+
+  #courses .information {
+    padding:0;
+    background-color: silver;
+  }
+
+  #courses h3 {
+    width:auto;
+    padding:1rem 0 1rem 1rem;
+  }
+
+  #courses h2 {
+    display: block;
+    padding-top: 2rem;
+    margin-top:-3rem;
+	  background-color: white;
+  }
+
+  #courses h4 {
+    display: none;
+  }
+
+  #courses p {
+    display: none;
+  }
+
+  #courses .image-container {
+    display: none;
+  }
+}  /*  end: media query  */
+
+
+
+
+
+
+/**
+ * 7.0 - Thesis - Desktop
+ */
+
+#thesis {
+  position:  relative;
+  top: 4rem;
+  height: auto;
+  color:black;
+}
+
+#thesis h1 {
+  padding-top: 2rem;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+#thesis .content {
+  padding: 2rem  1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#thesis .video-container {
+  width:60%;
+  height: auto;
+}
+
+#thesis video {
+  width:100%;
+  height:auto;
+}
+
+.video-container h2 {
+  margin: 1.5rem 0;
+  font-weight: bold;
+}
+
+#thesis .right {
+  width:100%;
+  height: auto;
+  margin-left:1.5rem;
+  flex-shrink: 3;
+  background-color: white;
+  border-left: 1px solid silver;
+}
+
+#thesis .information {
+  width:62%;
+  height:10.5rem;
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#thesis .background-other-color {
+  background-color: silver;
+}
+
+#thesis .box {
+  min-width:9.375rem;
+  padding: 1rem 0 1rem 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+#thesis  .image-container {
+  height:10.5rem;
+  width:auto;
+}
+
+#thesis p {
+  margin-top: 0.5rem;
+  color:black;
+}
+
+#thesis img {
+  width:100%;
+  height: 100%;
+}
+
+#thesis h3 {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color:black;
+}
+
+
+
+/**
+ * 7.1 - Thesis - Mobile
+ */
+
+@media only screen and (max-width:580px) {
+  #thesis .content {
+    padding: 0 0;
+  }
+
+  #thesis .right, p, h2 {
+    display: none;
+  }
+
+  #thesis .content {
+    padding: 2rem  0  0  0;
+  }
+
+  #thesis .video-container {
+    width:100%;
+  }
+}  /*  end: media query  */
+
+
+
+
+/**
+ * 8.0 - Footer - Desktop
+ */
+
+footer {
+  position: relative;
+  top: 4rem;
+  height:100px;
+  padding-top:1rem;
+  color:black;
+  border-top: 1px solid silver;
+  background-color: white;
+}
+
+footer .content {
+  width:auto;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+footer .content h3 {
+}
+
+footer li {
+  display: inline;
+  margin-left: 1.25rem;
+}
+
+
+/**
+ * 8.1 - Footer - Mobile
+ */
+
+@media only screen and (max-width:580px)  {
+  footer {
+	height:auto;
+    padding-top: 1.5rem;
+  }
+
+  footer ul {
+    display: none;
+  }
+
+  footer .content h3 {
+    padding: 1rem 0;
+  }
+
+  footer .content {
+    padding-left: 1rem;
+  }
+}  /*  end: media query  */
